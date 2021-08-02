@@ -1,0 +1,20 @@
+---
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: v7.32.0
+    hooks:
+      - id: eslint
+        additional_dependencies:
+          - eslint@7.32.0
+          - eslint-config-standard@16.0.3
+          - eslint-plugin-import
+          - eslint-plugin-node
+          - eslint-plugin-promise
+exclude: |
+  (?x)^(
+    (.*/)*\.pnp\.cjs|
+    \.yarn\/cache\/.+
+  )$
