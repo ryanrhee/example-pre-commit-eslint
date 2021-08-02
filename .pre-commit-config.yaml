@@ -8,7 +8,8 @@ repos:
     hooks:
       - id: eslint
         additional_dependencies:
-          - eslint-config-standard
+          - eslint@7.32.0
+          - eslint-config-standard@16.0.3
 exclude: |
   (?x)^(
     (.*/)*\.pnp\.cjs|
